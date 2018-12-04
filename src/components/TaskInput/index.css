@@ -1,0 +1,9 @@
+.addTask__content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.addTask__input{
+	margin: 0 10px;
+}
