@@ -12,7 +12,10 @@ export default class TaskInput extends Component{
 			return(
 			<div className="addTask__content" >
 				<div className='ui input addTask__input'>
-					<input type='text' placeholder='Add ' ref={(input) => {this.TaskText=input}}/>
+					<input type='text' 
+							placeholder='Add ' 
+							ref={(input) => {this.TaskText=input}} 
+							onKeyDown={(e)=>{if(e.keyCode==13) this.onAddTask()}}/>
 				</div>
 				<Button onClick={this.onAddTask.bind(this)} icon circular >
 					<Icon name="add" size="large" />

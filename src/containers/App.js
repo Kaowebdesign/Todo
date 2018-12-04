@@ -4,14 +4,14 @@ import './App.css';
 import {bindActionCreators} from 'redux';
 
 import {connect} from 'react-redux';
-import TodoList from '../components/List/';
+import TodoContainer from '../components/TodoContainer/';
 import {addTask} from '../actions/addTask';
 
 class App extends Component {
   render() {
       console.log('App props: ', this.props);
       return (
-          <TodoList todo={this.props.todo} addTask={this.props.onAddTask}/>
+          <TodoContainer todo={this.props.todo} addTask={this.props.onAddTask}/>
         )
   }
 }
