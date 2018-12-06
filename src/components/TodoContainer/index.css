@@ -1,5 +1,12 @@
-.todoList{
+.todoList__add{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 10px;
+}
+.todoList__content{
 	display: flex;
 	justify-content: center;
 	padding: 15px;
+}
+.todoList__items{
+	min-width: 300px;
 }

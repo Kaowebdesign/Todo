@@ -5,7 +5,9 @@ import './index.css';
 
 export default class TaskInput extends Component{
 	onAddTask(){
-		this.props.addTask(idGenerator('task'),this.TaskText.value,true);
+		this.TaskText.value===''?
+			alert('Please add some text to input'):
+			this.props.addTask(idGenerator('task'),this.TaskText.value,false);
 		this.TaskText.value='';
 	}
 	render(){
@@ -13,7 +15,7 @@ export default class TaskInput extends Component{
 			<div className="addTask__content" >
 				<div className='ui input addTask__input'>
 					<input type='text' 
-							placeholder='Add ' 
+							placeholder='What needs to be done? ' 
 							ref={(input) => {this.TaskText=input}} 
 							onKeyDown={(e)=>{if(e.keyCode==13) this.onAddTask()}}/>
 				</div>

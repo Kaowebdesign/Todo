@@ -9,9 +9,15 @@ class TodoContainer extends Component {
 	render(){
 		return(
 			<div className="todoList">
-				<div className="todoList__content">
+				<div className="todoList__add">
 					<TaskInput addTask={this.props.addTask}/>
-					<ListContainer listData={this.props} />		
+				</div>
+				<div className="todoList__content">
+					<div className="todoList__items">		
+						<ListContainer listData={this.props} 
+										toggleTask={this.props.toggleTask}
+										delTask={this.props.delTask} />		
+					</div>
 				</div>
 			</div>
 		);
