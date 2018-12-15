@@ -4,7 +4,7 @@ import './App.css';
 import {bindActionCreators} from 'redux';
 
 import {connect} from 'react-redux';
-import TodoContainer from '../components/TodoContainer/';
+import TodoContainer from '../components/TodoContainer/index.jsx';
 import {addTask} from '../actions/addTask';
 import {toggleTask} from '../actions/toggleTask';
 import {delTask} from '../actions/delTask.js';

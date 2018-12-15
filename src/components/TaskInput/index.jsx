@@ -5,7 +5,7 @@ import './index.css';
 
 export default class TaskInput extends Component{
 	onAddTask(){
-		this.TaskText.value===''?
+		this.TaskText.value.trim()===''?
 			alert('Please add some text to input'):
 			this.props.addTask(idGenerator('task'),this.TaskText.value,false);
 		this.TaskText.value='';
