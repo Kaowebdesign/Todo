@@ -10,3 +10,14 @@
 .todoList__items{
 	min-width: 300px;
 }
+.todoList__statusBar{
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	background: rgba(0,0,0,0.9);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

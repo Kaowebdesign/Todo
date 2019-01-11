@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import ListContainer from '../ListContainer/index.jsx';
+import StatusBar from '../StatusBar/idnex';
 import './index.css';
 
 import TaskInput from '../TaskInput/';
@@ -18,6 +18,9 @@ class TodoContainer extends Component {
 										toggleTask={this.props.toggleTask}
 										delTask={this.props.delTask} />		
 					</div>
+				</div>
+				<div className="todoList__statusBar"> 
+					<StatusBar />
 				</div>
 			</div>
 		);

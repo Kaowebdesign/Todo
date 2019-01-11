@@ -17,7 +17,7 @@ export default class TaskInput extends Component{
 					<input type='text' 
 							placeholder='What needs to be done? ' 
 							ref={(input) => {this.TaskText=input}} 
-							onKeyDown={(e)=>{if(e.keyCode==13) this.onAddTask()}}/>
+							onKeyDown={(e)=>{if(e.keyCode===13) this.onAddTask()}}/>
 				</div>
 				<Button onClick={this.onAddTask.bind(this)} icon circular >
 					<Icon name="add" size="large" />

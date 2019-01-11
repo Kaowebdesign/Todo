@@ -28,6 +28,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
+  console.log('***Test***');
   return{
     onAddTask: bindActionCreators(addTask, dispatch),
     onToggleTask: bindActionCreators(toggleTask, dispatch),
