@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import ListContainer from '../ListContainer/index.jsx';
-import StatusBar from '../StatusBar/idnex';
+import ShowTasks from '../../containers/ShowTasks';
+import Footer from '../../containers/Footer';
 import './index.css';
 
 import TaskInput from '../TaskInput/';
 
 class TodoContainer extends Component {
 	render(){
+		console.log('TodoContainer-> props -> ',this.props);
 		return(
 			<div className="todoList">
 				<div className="todoList__add">
@@ -14,13 +15,11 @@ class TodoContainer extends Component {
 				</div>
 				<div className="todoList__content">
 					<div className="todoList__items">		
-						<ListContainer listData={this.props} 
-										toggleTask={this.props.toggleTask}
-										delTask={this.props.delTask} />		
+						<ShowTasks />		
 					</div>
 				</div>
 				<div className="todoList__statusBar"> 
-					<StatusBar />
+					<Footer />
 				</div>
 			</div>
 		);

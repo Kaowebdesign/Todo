@@ -5,7 +5,7 @@ import {DELETE_TASK} from '../constants';
 const initialState=[{
 	id:1,
 	title:'Выучить React',
-	status:false
+	complete:false
 }];
 
 export default function todoReducer(state=initialState, action)  {
@@ -16,7 +16,7 @@ export default function todoReducer(state=initialState, action)  {
 			return state.map(
 					todo => 
 						todo.id===action.payload.id ?
-							{...todo,status:!todo.status}:
+							{...todo,complete:!todo.complete}:
 								todo
 
 				);

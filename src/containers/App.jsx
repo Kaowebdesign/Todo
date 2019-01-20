@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import './App.css';
 import {bindActionCreators} from 'redux';
 
@@ -21,14 +20,13 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state,ownProps){
   return {
     todo:state.todoReducer
   }
 }
 
 function mapDispatchToProps(dispatch){
-  console.log('***Test***');
   return{
     onAddTask: bindActionCreators(addTask, dispatch),
     onToggleTask: bindActionCreators(toggleTask, dispatch),

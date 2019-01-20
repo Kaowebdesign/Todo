@@ -10,6 +10,7 @@ import 'semantic-ui-css/semantic.min.css';
 
 const store=configureStore();
 
+
 ReactDOM.render(
 	<Provider store={store}>
 		<App />

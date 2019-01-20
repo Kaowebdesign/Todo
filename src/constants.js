@@ -1,4 +1,9 @@
 export const ADD_TASK='ADD__TASK';
 export const TOGGLE_TASK='TOGGLE_TASK';
 export const DELETE_TASK='DELETE_TASK';
-export const ACTIVE_TASK='ACTIVE_TASK';
+export const SHOW_TASK='SHOW_TASK';
+export const STATUS_TASK={
+    SHOW_ALL:'SHOW_ALL',
+    SHOW_ACTIVE:'SHOW_ACTIVE',
+    SHOW_COMPLETE:'SHOW_COMPLETE'
+}
