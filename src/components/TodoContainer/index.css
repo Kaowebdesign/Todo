@@ -1,23 +1,26 @@
-.todoList__add{
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	padding: 10px;
+.todoList__add {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
-.todoList__content{
-	display: flex;
-	justify-content: center;
-	padding: 15px;
+
+.todoList__content {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
-.todoList__items{
-	min-width: 300px;
+
+.todoList__items {
+    min-width: 300px;
 }
-.todoList__statusBar{
-	position: absolute;
-	bottom: 0;
-	height: 50px;
-	width: 100%;
-	background: rgba(0,0,0,0.9);
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+.todoList__statusBar {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

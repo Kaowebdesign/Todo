@@ -12,12 +12,8 @@ class TodoContainer extends Component {
 			<div className="todoList">
 				<div className="todoList__add">
 					<TaskInput addTask={this.props.addTask}/>
-				</div>
-				<div className="todoList__content">
-					<div className="todoList__items">		
-						<ShowTasks />		
-					</div>
-				</div>
+				</div>	
+				<ShowTasks />		
 				<div className="todoList__statusBar"> 
 					<Footer />
 				</div>

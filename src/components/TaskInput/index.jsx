@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import {Button, Icon} from 'semantic-ui-react';
 import idGenerator from 'react-id-generator';
+import randomColor from 'randomcolor';
+
 import './index.css';
+
 
 export default class TaskInput extends Component{
 	onAddTask(){
 		this.TaskText.value.trim()===''?
 			alert('Please add some text to input'):
-			this.props.addTask(idGenerator('task'),this.TaskText.value,false);
+			this.props.addTask(idGenerator('task'),this.TaskText.value,false,randomColor({luminosity: 'light'}));
 		this.TaskText.value='';
 	}
 	render(){
