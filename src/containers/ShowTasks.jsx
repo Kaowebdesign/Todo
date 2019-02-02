@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux'; 
-import randomColor from 'randomcolor';
+
 
 import ListContainer from '../components/ListContainer/index';
 import {STATUS_TASK} from '../constants';
@@ -22,7 +22,7 @@ const showTodo = (todo, status) => {
   }
   var date= new Date('2019-1-20');
   //console.log('***TEST***','==> ', date.getFullYear(),date.getMonth(), date.getDay());
-  console.log('***TEST***','==> ', randomColor());
+
 
 function mapStateToProps(state){
     return {

@@ -8,10 +8,9 @@ import './style.css'
 const ListContainer = ({todo, onToggleTask, onDelTask}) => {
 	return(
 		<div className='ListContainer'>
-			<Grid padded columns={1} reversed='mobile vertically' >
+			<Grid columns={4} stackable>
 				{todo.map((e,i) => 
 				<Grid.Column key={i} 
-							inverted
 							className="ListContainer__column" 
 							style={{opacity: e.complete? '.5':'1'}}>
 					<div className='ListContainer__wrap'>

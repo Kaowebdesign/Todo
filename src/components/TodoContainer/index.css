@@ -14,11 +14,12 @@
 }
 
 .todoList__statusBar {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
     height: 50px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.85);
     text-align: center;
     display: flex;
     justify-content: center;
