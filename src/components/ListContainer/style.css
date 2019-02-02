@@ -1,5 +1,5 @@
 .ListContainer {
-    padding: 10px;
+    padding: 20px 10px 3px;
 }
 
 .ListContainer__column {
@@ -18,7 +18,7 @@
     position: relative;
     padding: 10px;
     min-height: 100px;
-    /*border: 1px solid #ddd;*/
+    overflow: hidden;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
 }
 
